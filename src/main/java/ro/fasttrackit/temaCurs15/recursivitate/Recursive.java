@@ -1,14 +1,7 @@
 package ro.fasttrackit.temaCurs15.recursivitate;
 
 public class Recursive {
-    public static void main(String[] args) {
-        System.out.println();
-        int sum = sum(3);
-        System.out.println(sum);
 
-        System.out.println(evenSum(20));
-
-    }
 
     public static int sum(int n) {
         if (n == 0 || n == 1) {
@@ -19,7 +12,13 @@ public class Recursive {
     }
 
     public static int evenSum(int n) {
-        return (n * (n + 1));
+        if ((n % 2 != 0) && (n>1)){
+            return n;
+        } else {
+            return evenSum(n + 1) * n;
+        }
+
+
     }
 
     public boolean isPal(String palindrome) {

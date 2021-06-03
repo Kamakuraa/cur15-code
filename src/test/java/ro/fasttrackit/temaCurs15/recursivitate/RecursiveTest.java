@@ -33,7 +33,7 @@ class RecursiveTest {
 
     @Test
     void even() {
-        Assertions.assertThat(recursive.evenSum(2)).isEqualTo(6);
+        Assertions.assertThat(recursive.evenSum(6)).isEqualTo(42);
 //        Assertions.assertThat(recursive.evenSum(120)).isEqualTo(1);
     }
 

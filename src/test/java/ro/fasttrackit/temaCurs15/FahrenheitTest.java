@@ -19,17 +19,15 @@ class FahrenheitTest {
     @Test
     @DisplayName("FAHRENHEIT method works")
     void celsius() {
-        assertThat(fahrenheit.fahrenheitToCelsius(50)).isEqualTo(10);
+        assertThat(fahrenheit.fahrenheitToCelsius(55)).isEqualTo(12.777777777777779);
 
-        assertThat(fahrenheit.fahrenheitToCelsius(50)).isEqualTo(50);
     }
 
     @Test
     @DisplayName("CELSIUS method works")
     void fahrenheitToCelsius() {
-        assertThat(fahrenheit.celsius(10)).isEqualTo(10);
+        assertThat(fahrenheit.celsius(33)).isEqualTo(91.4);
 
-        assertThat(fahrenheit.celsius(1)).isEqualTo(50);
 
     }
 
